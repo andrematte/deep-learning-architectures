@@ -13,4 +13,4 @@ You can check each model's summaries by running the python file. All model infor
 | Author          | Year | Architecture                                                            | Paper Link                                                        |
 | --------------- | ---- | ----------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | Yann Lecun      | 1998 | [LeNet-5](https://github.com/andrematte/deep-learning-architectures/blob/master/lenet5.py)  | [Paper Link](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) |
-| Alex Krizhevsky | 2017 | [AlexNet](https://github.com/andrematte/deep-learning-architectures/blob/master/alexnet.py) | [Paper Link](https://dl.acm.org/doi/10.1145/3065386)              
+| Alex Krizhevsky | 2012 | [AlexNet](https://github.com/andrematte/deep-learning-architectures/blob/master/alexnet.py) | [Paper Link](https://dl.acm.org/doi/10.1145/3065386)              
