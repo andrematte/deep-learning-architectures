@@ -13,6 +13,8 @@ def alexnet():
     model = Sequential()
 
     # Layer 1: Conv
+    # The dimensions of the input tensor are described in the paper as (224,224,3). 
+    # This is believed to be a typo and was adjusted to (227,227,3).
     model.add(Conv2D(filters=96, kernel_size=(11, 11), strides=(4, 4),
               activation='relu', input_shape=(227, 227, 3), padding='valid'))
 
