@@ -31,22 +31,22 @@ def bottleneck_residual_block(X, middle_kernel, filters, reduce=False, s=2):
         X_shortcut = BatchNormalization(axis=3)(X_shortcut)
 
         # First component with reduce
-        X = Conv2D(filters=F1, kernel_size=(1, 1), strides=(s, s), padding="valid")(X)
+        X = Conv2D(F1, (1, 1), strides=(s, s), padding="valid")(X)
 
     else:
         # First Component without reduce
-        X = Conv2D(filters=F1, kernel_size=(1, 1), strides=(1, 1), padding="valid")(X)
+        X = Conv2D(F1, (1, 1), strides=(1, 1), padding="valid")(X)
 
     X = BatchNormalization(axis=3)(X)
     X = Activation("relu")(X)
 
     # Second Component
-    X = Conv2D(filters=F2, kernel_size=middle_kernel, strides=(1, 1), padding="same")(X)
+    X = Conv2D(F2, middle_kernel, strides=(1, 1), padding="same")(X)
     X = BatchNormalization(axis=3)(X)
     X = Activation("relu")(X)
 
     # Third Component
-    X = Conv2D(filters=F3, kernel_size=(1, 1), strides=(1, 1), padding="valid")(X)
+    X = Conv2D(F3, (1, 1), strides=(1, 1), padding="valid")(X)
     X = BatchNormalization(axis=3)(X)
 
     # Adding Residue before activation layer
