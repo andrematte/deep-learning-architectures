@@ -1,6 +1,6 @@
 # Deep Learning Architectures
 
- This repository contains a compilation of Deep Learning architetures implemented using the Keras framework. The implementations are based on their respective scientific papers. 
+ This repository contains a compilation of Deep Learning architectures implemented using the Keras framework. The implementations are based on their respective scientific papers. 
 
 
 # Model Summaries
